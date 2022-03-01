@@ -6,11 +6,11 @@
       .titulo-principal__numero
         span 1
       h1 Conectividad IoT
-    p.mb-5 El IoT, o internet de las cosas, consiste en conectar a internet cualquier dispositivo teniendo en cuenta tres aspectos fundamentales: captura de datos (telemetría, geoposicionamiento), tratamiento de datos (Business Intelligence, Machine Learning…) y transformación del negocio.
+    p.mb-5 El IoT, o internet de las cosas, consiste en conectar a internet cualquier dispositivo teniendo en cuenta tres aspectos fundamentales: captura de datos (telemetría, geoposicionamiento), tratamiento de datos (<em>Business Intelligence, Machine Learning…</em>) y transformación del negocio.
     .row.mb-5.align-items-center.justify-content-center
       .col-lg-5.p-5(data-aos="fade-right"): img(src="@/assets/curso/0.svg")
       .col-lg-7.p-5(data-aos="fade-left")
-        p.w-75 Los dispositivos IoT generan grandes cantidades de datos digitales que contienen información de los usuarios, y las máquinas de análisis del Big Data y las plataformas en la nube pueden acceder a esos datos para generar información relevante y útil para los consumidores.
+        p.w-75 Los dispositivos IoT generan grandes cantidades de datos digitales que contienen información de los usuarios, y las máquinas de análisis del <em>Big Data</em> y las plataformas en la nube pueden acceder a esos datos para generar información relevante y útil para los consumidores.
           br
           br
           |Para lo anterior se necesita una arquitectura global IoT que se compone de los siguientes componentes, trabajando conjuntamente:
@@ -29,7 +29,7 @@
             figure
               img(src='@/assets/curso/12.svg', alt='Texto que describa la imagen')
           .col-md-5.mb-4.mb-md-0
-            h4 Gateway 
+            h4 <em>Gateway</em> 
             p Es usado para filtrado, preprocesamiento y comunicación con la nube y viceversa. 
       .py-4.py-md-5(titulo="Cloud Gateway" :icono="require('@/assets/curso/20.svg')")
         .row
@@ -37,15 +37,15 @@
             figure
               img(src='@/assets/curso/13.svg', alt='Texto que describa la imagen')
           .col-md-5.mb-4.mb-md-0
-            h4 Cloud Gateway
-            p Es usado para filtrado, preprocesamiento y comunicación con la nube y viceversa. 
+            h4 <em>Cloud Gateway</em>
+            p Se usa para transmitir datos entre otros <em>gateway</em> y los servidores centrales IoT 
       .py-4.py-md-5(titulo="Data Lake" :icono="require('@/assets/curso/21.svg')")
         .row
           .col-md-3
             figure
               img(src='@/assets/curso/14.svg', alt='Texto que describa la imagen')
           .col-md-5.mb-4.mb-md-0
-            h4 Data Lake
+            h4 <em>Data Lake</em>
             p Repositorio de almacenamiento que contiene datos en bruto. 
       .py-4.py-md-5(titulo="Big data Warehouse " :icono="require('@/assets/curso/22.svg')")
         .row
@@ -53,7 +53,7 @@
             figure
               img(src='@/assets/curso/15.svg', alt='Texto que describa la imagen')
           .col-md-5.mb-4.mb-md-0
-            h4 Big data Warehouse
+            h4 <em>Big data Warehouse</em>
             p Se usa para recopilar datos valiosos. 
       .py-4.py-md-5(titulo="Aplicaciones de control" :icono="require('@/assets/curso/23.svg')")
         .row
@@ -119,7 +119,7 @@
       span Protocolo MQTT
     .row.justify-content-center.mb-5.p-5
       .col-lg-10: img(src='@/assets/curso/5.svg')
-    p.mb-5 La estrategia comunicativa se basa en la publicación de mensajes específicos (topics) y la suscripción a esos mensajes. Estos mensajes son una trama de datos con un payload que contiene la información real para el servidor o para el resto de nodos. En una red de sensores esta información contiene valores medidos por los sensores, tales como temperatura, humedad, estado, etc.
+    p.mb-5 La estrategia comunicativa se basa en la publicación de mensajes específicos (<em>topics</em>) y la suscripción a esos mensajes. Estos mensajes son una trama de datos con un <em>payload</em> que contiene la información real para el servidor o para el resto de nodos. En una red de sensores esta información contiene valores medidos por los sensores, tales como temperatura, humedad, estado, etc.
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-8
         .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
@@ -137,7 +137,7 @@
           |<b>Quien publica y quien recibe no necesitan estar conectados a la vez, porque el <em>broker</em> tiene la capacidad de almacenar mensajes</b>, aunque en la mayoría de los casos los mensajes se consumen en tiempo real, generalmente sucede con clientes que no están sincrónicamente conectados. 
           br
           br
-          |En resumen, <b>el protocolo MQTT se basa en que alguien publica un mensaje con el identificador de un <em>topic</em>específico</b> , el <em>broker</em> distribuye el mensaje a todos los clientes (aplicaciones o dispositivos) que están suscritos a ese <em>topic</em> y esos clientes reciben y consumen los datos de esos mensajes.
+          |En resumen, <b>el protocolo MQTT se basa en que alguien publica un mensaje con el identificador de un <em>topic </em>específico</b> , el <em>broker</em> distribuye el mensaje a todos los clientes (aplicaciones o dispositivos) que están suscritos a ese <em>topic</em> y esos clientes reciben y consumen los datos de esos mensajes.
           br
           br
           |MQTT se usa actualmente en autos, casas y ciudades inteligentes, así como en fábricas, productos de consumo, etcétera.
@@ -194,7 +194,7 @@
           figure
             img(src='@/assets/curso/26.png', alt='Texto que describa la imagen')
         .col-md-6.mb-4.mb-md-0
-          p Plataforma middleware de código abierto que unifica IoT con los servicios de computación en la nube, proporciona servicios de registro, implementación y descubrimiento de sensores, monitoreo de dispositivos, visualización de información, desarrollo de aplicaciones sencillas.
+          p Plataforma <em>middleware</em> de código abierto que unifica IoT con los servicios de computación en la nube, proporciona servicios de registro, implementación y descubrimiento de sensores, monitoreo de dispositivos, visualización de información, desarrollo de aplicaciones sencillas.
       .row(titulo="ThingSpeak")
         .col-md-3
           figure
@@ -206,7 +206,7 @@
           figure
             img(src='@/assets/curso/28.png', alt='Texto que describa la imagen')
         .col-md-6.mb-4.mb-md-0
-          p Servicio no opensource para IoT de Amazon, proporciona gateway de dispositivos, agente de mensajes MQTT, y ofrece servicios de seguridad e identidad, registro de dispositivos.
+          p Servicio no <em>opensource</em> para IoT de Amazon, proporciona <em>gateway</em> de dispositivos, agente de mensajes MQTT, y ofrece servicios de seguridad e identidad, registro de dispositivos.
       .row(titulo="AZURE IoT")
         .col-md-3
           figure
@@ -219,6 +219,8 @@
             img(src='@/assets/curso/30.png', alt='Texto que describa la imagen')
         .col-md-6.mb-4.mb-md-0
           p Ofrece herramientas que posibilitan la conexión de dispositivos como procesamiento, almacenamiento y análisis de datos en la nube.
+    h3 IoT en la nube
+    p.mb-5 A continuación, se implementará un modelo basado en cuatro capas donde se pueden observar cuatro componentes principales. 
     CardClick(:cards='cards').mb-5
     
     #t_1_5.titulo-segundo.color-acento-contenido
@@ -233,6 +235,9 @@
           br
           br
           |Según la Unión Internacional de Telecomunicaciones (ITU-T), el Big Data es un paradigma para habilitar la colección, almacenamiento, gestión, análisis y visualización –potencialmente con limitaciones de tiempo real–, de un extenso conjunto de datos con características heterogéneas. 
+          br
+          br
+          | Las características principales que definen el Big Data son volumen, velocidad y variedad. Otros autores agregan dos características más que son veracidad y valor. 
     ImagenInfografica.color-acento-contenido.mb-5
       template(v-slot:imagen)
         figure
@@ -278,7 +283,7 @@ export default {
     indicadorTarjetaFlip: true,
     cards: [
       {
-        titulo: 'Prueba de titulo',
+        titulo: 'Nodo cliente',
         texto:
           'Es la capa de percepción que permite obtener o enviar datos al mundo físico o virtual mediante sensores o actuadores, sensores como temperatura, humedad, estado de un dispositivo, sensores lumínicos, etc.',
         img: require('@/assets/curso/card1.svg'),
@@ -342,4 +347,8 @@ export default {
     color: $color-sistema-texto !important
 .acordion__activo
   background-color: #E1CEF0
+.tabs-b__tab
+  background-color: #E0F1F2
+.tabs-a__tab
+  background-color: #DCDCDC
 </style>
