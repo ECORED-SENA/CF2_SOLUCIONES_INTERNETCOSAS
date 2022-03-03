@@ -47,7 +47,7 @@
           .col-md-5.mb-4.mb-md-0
             h4 <em>Data Lake</em>
             p Repositorio de almacenamiento que contiene datos en bruto. 
-      .py-4.py-md-5(titulo="Big data Warehouse " :icono="require('@/assets/curso/22.svg')")
+      .py-4.py-md-5(titulo="<em>Big data Warehouse</em> " :icono="require('@/assets/curso/22.svg')")
         .row
           .col-md-3
             figure
@@ -79,13 +79,13 @@
     TabsA.color-acento-botones.mb-5
       .tarjeta.bg-amarillo--claro.p-4(titulo="7. Aplicación")
         h4 Aplicación
-        p Esta es la capa que los usuarios ven y sirve de interfaz entre las aplicaciones donde generamos los datos y el resto de la red. Los datos a transmitir son generados por una aplicación. No nos referimos a las aplicaciones mismas, sino a los procesos que funcionan a nivel de software en nuestro aplicativo; por ejemplo: enviar un mensaje con WhatsApp, ver un video, enviar un correo, Twitter, navegador web.
+        p Esta es la capa que los usuarios ven y sirve de interfaz entre las aplicaciones donde generamos los datos y el resto de la red. Los datos a transmitir son generados por una aplicación. No nos referimos a las aplicaciones mismas, sino a los procesos que funcionan a nivel de <em>software</em> en nuestro aplicativo; por ejemplo: enviar un mensaje con WhatsApp, ver un video, enviar un correo, Twitter, navegador <em>web</em>.
       .tarjeta.bg-amarillo--claro.p-4(titulo="6. Presentación")
         h4 Presentación
         p Se encarga de traducir el formato que deseamos ver e implementa mecanismos de codificación como ASCII o Unicode para representar los datos a un formato que las computadoras entienden, se traduce lenguaje de alto nivel a lenguaje binario. Por ejemplo: si queremos ver una imagen, esta capa se encarga de dicha acción.
       .tarjeta.bg-amarillo--claro.p-4(titulo="5. Sesión")
         h4 Sesión
-        p Maneja la conversación entre dos equipos (hosts) y establece el camino para las aplicaciones que se van a comunicar entre el dispositivo emisor y el receptor; el diálogo de establecer mantener y cerrar se llama sesión.
+        p Maneja la conversación entre dos equipos (<em>hosts</em>) y establece el camino para las aplicaciones que se van a comunicar entre el dispositivo emisor y el receptor; el diálogo de establecer mantener y cerrar se llama sesión.
       .tarjeta.bg-amarillo--claro.p-4(titulo="4. Transporte")
         h4 Transporte
         p Segmenta los datos en paquete, se hace en el dispositivo emisor y el dispositivo receptor hace todo lo contrario; a este al proceso se le conoce como segmentación y reensamblaje. Los datos son particionados, puesto que las redes tienen anchos de banda limitados.
@@ -101,16 +101,16 @@
         ul.lista-ul--color
           li 
             i.fas.fa-circle
-            | LLC (Logic Link Control) , MAC (Media Access Control). 
+            | LLC (<em>Logic Link Control</em>) , MAC (<em>Media Access Control</em>). 
           li 
             i.fas.fa-circle
-            | LLC comunica el software de la red con el hardware de la misma por medio de drivers de tarjeta de red, una vez se realiza la comunicación se envían los datos a la MAC (se agrega un direccionamiento físico), la IP indica en qué red en el mundo se encuentra el dispositivo y la dirección MAC dice cuál es el dispositivo de la red.
+            | LLC comunica el <em>software</em> de la red con el <em>hardware</em> de la misma por medio de <em>drivers</em> de tarjeta de red, una vez se realiza la comunicación se envían los datos a la MAC (se agrega un direccionamiento físico), la IP indica en qué red en el mundo se encuentra el dispositivo y la dirección MAC dice cuál es el dispositivo de la red.
       .tarjeta.bg-amarillo--claro.p-4(titulo="1. Física")
         h4 Física
-        p Envía la información de la capa de enlace de datos. Como los datos no pueden viajar como números o código binario, estos son codificados en señales (eléctricas, lumínicas o de ondas) dependiendo del tipo de medio de comunicación que conecte a nuestro dispositivo emisor o receptor. El trabajo de codificación lo realiza la tarjeta de red o NIC. Los datos pueden viajar por cables de cobre, fibra óptica o por el espacio como un tipo de onda, usando redes inalámbricas como el wifi.
+        p Envía la información de la capa de enlace de datos. Como los datos no pueden viajar como números o código binario, estos son codificados en señales (eléctricas, lumínicas o de ondas) dependiendo del tipo de medio de comunicación que conecte a nuestro dispositivo emisor o receptor. El trabajo de codificación lo realiza la tarjeta de red o NIC. Los datos pueden viajar por cables de cobre, fibra óptica o por el espacio como un tipo de onda, usando redes inalámbricas como el <em>wifi</em>.
     #t_1_2.titulo-segundo.color-acento-contenido
       h2 1.2 Protocolos de comunicación MQTT
-    p.mb-5 Es un protocolo simple para la transmisión de mensajes cortos de telemetría y control, desde o hacia una red de sensores / actuadores, es un protocolo de comunicación de máquina a máquina, machine to machine o M2M; este protocolo se localiza en las capas superiores del modelo OSI. 
+    p.mb-5 Es un protocolo simple para la transmisión de mensajes cortos de telemetría y control, desde o hacia una red de sensores / actuadores, es un protocolo de comunicación de máquina a máquina, <em>machine to machine</em> o M2M; este protocolo se localiza en las capas superiores del modelo OSI. 
       br
       br
       |Existe un estándar MQTT a cargo del organismo OASIS que actualmente cuenta con la versión 5 del 7 de marzo de 2019; el protocolo MQTT se basa en el modelo de comunicación productor - consumidor.
@@ -159,7 +159,7 @@
             .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/8.svg')})`}")
             .tarjeta-flip__contenido.p-4.p-xl-5.text-center
               h3.mb-1 SaaS 
-              p (software como un servicio)
+              p (<em>Software</em> como un servicio)
               p Aplicaciones que se ejecutan en la nube, en este caso para el usuario es invisible la infraestructura de red, almacenamiento, servidores, sistemas operativos y la nube asegura correcto funcionamiento del aplicativo. Ejemplos de este modelo son Google Docs, Gmail, Dropbox.
       .col-sm-6.col-xl-4.mb-4.mb-xl-0
         .tarjeta.tarjeta-flip.color-primario(@mouseover="indicadorTarjetaFlip = false")
@@ -168,7 +168,7 @@
             .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/9.svg')})`}")
             .tarjeta-flip__contenido.p-4.p-xl-5.text-center
               h3.mb-1 PaaS
-              p (plataforma como un servicio)
+              p (Plataforma como un servicio)
               p En este caso la nube alberga todo lo necesario para construir y entregar aplicaciones basadas en la nube, en este caso el usuario puede controlar la aplicación, pero no puede administrar la infraestructura subyacente de la nube. Ejemplos de este modelo son Openshift y Google App Engine.
       .col-sm-6.col-xl-4.mb-4.mb-xl-0
         .tarjeta.tarjeta-flip.color-primario(@mouseover="indicadorTarjetaFlip = false")
@@ -177,10 +177,10 @@
             .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/10.svg')})`}")
             .tarjeta-flip__contenido.p-4.p-xl-5.text-center
               h3.mb-1 IaaS 
-              p (infraestructura como un servicio)
+              p (Infraestructura como un servicio)
               p En este modelo se proporciona a las empresas servidores, almacenamiento, redes y centros de datos listos para su uso; el proveedor se encarga de la comunicación, el procesamiento o el almacenamiento.
     #t_1_4.titulo-segundo.color-acento-contenido
-      h2 1.4 Pasarelas de cloud para IoT
+      h2 1.4 Pasarelas de <em>cloud</em> para IoT
     p.mb-5 Debido a la necesidad de gestionar de forma ágil y eficiente la alta cantidad de datos que generan los dispositivos IoT, han nacido plataformas de computación en la nube orientadas a IoT. Ahora se ampliará la información al respecto.
     AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta ")
       .row(titulo="Kaa Iot")
@@ -231,13 +231,13 @@
         p Para el objetivo final de los datos recogidos provenientes de la capa de percepción (sensores y otros dispositivos), es necesario describir patrones y correlaciones en tiempo real para impactar en forma positiva a las empresas en su toma de decisiones, como, por ejemplo, la analítica de datos en IoT puede controlar la producción, la temperatura en procesos industriales, monitorear la salud de los pacientes, etcétera.
           br
           br
-          |Aquí entra el concepto del Big Data que, según el Instituto Nacional de Estándares y Tecnologías (NIST), consiste de un extenso conjunto de datos principalmente con características de volumen, variedad, velocidad y variabilidad que requieren una arquitectura escalable para un almacenamiento, manipulación y análisis eficientes.
+          |Aquí entra el concepto del <em>Big Data</em> que, según el Instituto Nacional de Estándares y Tecnologías (NIST), consiste de un extenso conjunto de datos principalmente con características de volumen, variedad, velocidad y variabilidad que requieren una arquitectura escalable para un almacenamiento, manipulación y análisis eficientes.
           br
           br
-          |Según la Unión Internacional de Telecomunicaciones (ITU-T), el Big Data es un paradigma para habilitar la colección, almacenamiento, gestión, análisis y visualización –potencialmente con limitaciones de tiempo real–, de un extenso conjunto de datos con características heterogéneas. 
+          |Según la Unión Internacional de Telecomunicaciones (ITU-T), el <em>Big Data</em> es un paradigma para habilitar la colección, almacenamiento, gestión, análisis y visualización –potencialmente con limitaciones de tiempo real–, de un extenso conjunto de datos con características heterogéneas. 
           br
           br
-          | Las características principales que definen el Big Data son volumen, velocidad y variedad. Otros autores agregan dos características más que son veracidad y valor. 
+          | Las características principales que definen el <em>Big Data</em> son volumen, velocidad y variedad. Otros autores agregan dos características más que son veracidad y valor. 
     ImagenInfografica.color-acento-contenido.mb-5
       template(v-slot:imagen)
         figure
@@ -251,10 +251,10 @@
         p Indica los diferentes tipos de datos recolectados, pueden ser texto, imágenes, videos, audios o logs, estructurados o no estructurados, los datos de IoT pueden ser almacenados en formatos JSON.
       .tarjeta.color-acento-contenido.p-3(x="20%" y="50%" numero="")
         .h5.mb-2 Veracidad
-        p Indica el grado de fiabilidad de la información, es clave hacer un filtrado con la tecnología del Big Data de lo que puede ser falso o no.
+        p Indica el grado de fiabilidad de la información, es clave hacer un filtrado con la tecnología del <em>Big Data</em> de lo que puede ser falso o no.
       .tarjeta.color-acento-contenido.p-3(x="60%" y="47%" numero="")
         .h5.mb-2 Volumen 
-        p Indica la gran cantidad de datos recolectada de diferentes fuentes de datos, esta cantidad de datos se mide en terabytes(tb), petabytes (PB), incluso a los EB, en el caso de IoT provienen de sensores y dispositivos inteligentes.
+        p Indica la gran cantidad de datos recolectada de diferentes fuentes de datos, esta cantidad de datos se mide en <em>terabytes</em>(tb), <em>petabytes</em> (PB), incluso a los EB, en el caso de IoT provienen de sensores y dispositivos inteligentes.
       .tarjeta.color-acento-contenido.p-3(x="70%" y="70%" numero="")
         .h5.mb-2 Valor
         p Hace referencia a la información útil de verdad que se puede extraer de los datos. Esa misma ayudará a las empresas  a generar un valor agregado para tu negocio, que se convierte en conocimiento y en una acción o decisión. 
@@ -264,7 +264,7 @@
       |El objetivo del <em>Big Data</em> es extraer la mayor cantidad de valor, información o conocimiento de los grandes volúmenes de datos para lograr conclusiones acertadas y mejorar la toma de decisiones. El proceso de análisis de datos está compuesto por una extracción, limpieza, transformación, modelado y visualización de los datos. 
     .titulo-sexto.color-acento-contenido
       h5 Figura 2
-      span Proceso del Big Data
+      span Proceso del <em>Big Data</em>
     .row.mb-5.align-items-center.justify-content-center
       .col-lg-11: img(src='@/assets/curso/32.svg')
 </template>
@@ -293,7 +293,7 @@ export default {
       {
         titulo: 'Broker MQTT',
         texto:
-          'Es un elemento  primordial para realizar el envío de los datos entre los clientes, debe estar en constante funcionamiento y ser visible a red externa. <br><br>Entre muchos brokers públicos existen dos bastante usados y disponibles:<br><br> <b>Mosquito Broker:</b> servicio gratuito destinado a la realización de pruebas.<br><br> <b>Cloud MQTT:</b> servicio de pago y asegura disponibilidad del servicio.',
+          'Es un elemento  primordial para realizar el envío de los datos entre los clientes, debe estar en constante funcionamiento y ser visible a red externa. <br><br>Entre muchos <em>brokers</em> públicos existen dos bastante usados y disponibles:<br><br> <b>Mosquito Broker:</b> servicio gratuito destinado a la realización de pruebas.<br><br> <b>Cloud MQTT:</b> servicio de pago y asegura disponibilidad del servicio.',
         img: require('@/assets/curso/card2.svg'),
         class: 'bg-card__2',
         classText: 'bg__2',
@@ -301,7 +301,7 @@ export default {
       {
         titulo: 'Nodo servidor',
         texto:
-          'Este nodo cuenta  con funciones de servidor web y base de datos y como cliente MQTT suscrito a los topics de interés y almacena información en la base de datos.',
+          'Este nodo cuenta  con funciones de servidor <em>web</em> y base de datos y como cliente MQTT suscrito a los topics de interés y almacena información en la base de datos.',
         img: require('@/assets/curso/card3.svg'),
         class: 'bg-card__3',
         classText: 'bg__3',
@@ -309,7 +309,7 @@ export default {
       {
         titulo: 'Usuarios finales',
         texto:
-          'Cualquier usuario del servicio que disponga de un terminal con acceso a internet podrá acceder a la aplicación web y visualizar la información proveniente de los sensores de manera sencilla.',
+          'Cualquier usuario del servicio que disponga de un terminal con acceso a internet podrá acceder a la aplicación <em>web</em> y visualizar la información proveniente de los sensores de manera sencilla.',
         img: require('@/assets/curso/card4.svg'),
         class: 'bg-card__4',
         classText: 'bg__4',
