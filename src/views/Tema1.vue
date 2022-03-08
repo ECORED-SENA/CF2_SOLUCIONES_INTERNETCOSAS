@@ -343,7 +343,7 @@ export default {
 .bloque-texto-g__img
   width: 65%
 .tarjeta-flip__contenido
-  h3,p
+  h3,p, em
     color: $color-sistema-texto !important
 .acordion__activo
   background-color: #E1CEF0
