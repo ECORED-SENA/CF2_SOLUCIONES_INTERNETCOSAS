@@ -249,13 +249,13 @@ export default {
       },
       {
         nombre: 'Hector Henry Jurado Soto',
-        cargo: 'Experto temático - Contratista',
+        cargo: 'Experto temático',
         centro:
           'Centro de teleinformática y producción industrial - Regional Cauca ',
       },
       {
         nombre: 'Caterine Bedoya Mejía',
-        cargo: 'Diseñadora Instruccional',
+        cargo: 'Diseñadora instruccional',
         centro: 'Centro de Gestión Industrial - Regional Distrito Capital',
       },
       {

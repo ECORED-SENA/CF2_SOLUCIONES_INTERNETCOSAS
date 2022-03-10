@@ -1283,7 +1283,7 @@
             <slidelink slideid="_player.6iPYYXYye9N.5VN3UEYPsYy" displaytext="El modelo TCP/IP es usado para comunicaciones en internet, el modelo se divide en ocho capas bien diferenciadas. " expand="false" type="slide" />
             <slidelink slideid="_player.6iPYYXYye9N.6nTJNIrwzv9" displaytext="El HTML es un protocolo simple para la transmisión de mensajes cortos de telemetría y control, desde o hacia una red de sensores / actuadores, es un protocolo de comunicación de máquina a máquina, machine to machine o M2M." expand="false" type="slide" />
             <slidelink slideid="_player.6iPYYXYye9N.5c6EMqH0BIf" displaytext="El protocolo MQTT se localiza en las capas superiores del modelo OSI y se basa en el modelo de comunicación productor - consumidor." expand="false" type="slide" />
-            <slidelink slideid="_player.6iPYYXYye9N.5qnL0WWaaVK" displaytext="Estas capas pertenecen al modelo OSI:  aplicación, Presentación, Distribución, Sesión, Transporte, Red, Enlace de datos.&#xD;&#xA;" expand="false" type="slide" />
+            <slidelink slideid="_player.6iPYYXYye9N.5qnL0WWaaVK" displaytext="Estas capas pertenecen al modelo OSI:  aplicación, presentación, distribución, sesión, transporte, red, enlace de datos.&#xD;&#xA;" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
