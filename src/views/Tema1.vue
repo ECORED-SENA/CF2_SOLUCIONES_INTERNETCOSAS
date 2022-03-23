@@ -108,6 +108,11 @@
       .tarjeta.bg-amarillo--claro.p-4(titulo="1. Física")
         h4 Física
         p Envía la información de la capa de enlace de datos. Como los datos no pueden viajar como números o código binario, estos son codificados en señales (eléctricas, lumínicas o de ondas) dependiendo del tipo de medio de comunicación que conecte a nuestro dispositivo emisor o receptor. El trabajo de codificación lo realiza la tarjeta de red o NIC. Los datos pueden viajar por cables de cobre, fibra óptica o por el espacio como un tipo de onda, usando redes inalámbricas como el <em>wifi</em>.
+    h3 Modelo TCP/IP 
+    p.mb-5 A través del siguiente video, se conocerá un ejemplo sencillo sobre cómo funciona un modelo TCP/IP.
+    figure.mb-5
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/HhgkV7YDhXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     #t_1_2.titulo-segundo.color-acento-contenido
       h2 1.2 Protocolos de comunicación MQTT
     p.mb-5 Es un protocolo simple para la transmisión de mensajes cortos de telemetría y control, desde o hacia una red de sensores / actuadores, es un protocolo de comunicación de máquina a máquina, <em>machine to machine</em> o M2M; este protocolo se localiza en las capas superiores del modelo OSI. 
