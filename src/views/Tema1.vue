@@ -23,7 +23,7 @@
           .col-md-5.mb-4.mb-md-0
             h4 Cosas 
             p IoT inicia con sensores conectados a las cosas para recolectar los datos y actuadores para realizar acciones correspondientes  a los comandos recibidos desde la nube.
-      .py-4.py-md-5(titulo="Gateway " :icono="require('@/assets/curso/19.svg')")
+      .py-4.py-md-5(titulo="<em>Gateway</em> " :icono="require('@/assets/curso/19.svg')")
         .row
           .col-md-3
             figure
@@ -31,7 +31,7 @@
           .col-md-5.mb-4.mb-md-0
             h4 <em>Gateway</em> 
             p Es usado para filtrado, preprocesamiento y comunicación con la nube y viceversa. 
-      .py-4.py-md-5(titulo="Cloud Gateway" :icono="require('@/assets/curso/20.svg')")
+      .py-4.py-md-5(titulo="<em>Cloud Gateway</em>" :icono="require('@/assets/curso/20.svg')")
         .row
           .col-md-3
             figure
@@ -39,7 +39,7 @@
           .col-md-5.mb-4.mb-md-0
             h4 <em>Cloud Gateway</em>
             p Se usa para transmitir datos entre otros <em>gateway</em> y los servidores centrales IoT 
-      .py-4.py-md-5(titulo="Data Lake" :icono="require('@/assets/curso/21.svg')")
+      .py-4.py-md-5(titulo="<em>Data Lake</em>" :icono="require('@/assets/curso/21.svg')")
         .row
           .col-md-3
             figure
@@ -94,17 +94,17 @@
         p Una de las capas más importantes es la capa 3, pues determina la mejor ruta para que un mensaje llegue a otro dispositivo. Es una capa de direccionamiento y enrutamiento que no toca el contenido de los datos, sino que les agrega a dicho contenido direcciones IP origen e IP destino; cada dispositivo en el mundo tiene una dirección.
           br
           br
-          |En esta capa también se hace enrutamiento, para ello se usan los routers.
+          |En esta capa también se hace enrutamiento, para ello se usan los <em>routers.</em>
       .tarjeta.bg-amarillo--claro.p-4(titulo="2. Enlace de datos")
         h4 Enlace de datos
         p Toma toda la información y la traduce en información binaria, además, se divide en dos subcapas:
         ul.lista-ul--color
           li 
             i.fas.fa-circle
-            | LLC (<em>Logic Link Control</em>) , MAC (<em>Media Access Control</em>). 
+            p.mb-0 LLC (<em>Logic Link Control</em>) , MAC (<em>Media Access Control</em>). 
           li 
             i.fas.fa-circle
-            | LLC comunica el <em>software</em> de la red con el <em>hardware</em> de la misma por medio de <em>drivers</em> de tarjeta de red, una vez se realiza la comunicación se envían los datos a la MAC (se agrega un direccionamiento físico), la IP indica en qué red en el mundo se encuentra el dispositivo y la dirección MAC dice cuál es el dispositivo de la red.
+            p.mb-0 LLC comunica el <em>software</em> de la red con el <em>hardware</em> de la misma por medio de <em>drivers</em> de tarjeta de red, una vez se realiza la comunicación se envían los datos a la MAC (se agrega un direccionamiento físico), la IP indica en qué red en el mundo se encuentra el dispositivo y la dirección MAC dice cuál es el dispositivo de la red.
       .tarjeta.bg-amarillo--claro.p-4(titulo="1. Física")
         h4 Física
         p Envía la información de la capa de enlace de datos. Como los datos no pueden viajar como números o código binario, estos son codificados en señales (eléctricas, lumínicas o de ondas) dependiendo del tipo de medio de comunicación que conecte a nuestro dispositivo emisor o receptor. El trabajo de codificación lo realiza la tarjeta de red o NIC. Los datos pueden viajar por cables de cobre, fibra óptica o por el espacio como un tipo de onda, usando redes inalámbricas como el <em>wifi</em>.
@@ -142,7 +142,7 @@
           |<b>Quien publica y quien recibe no necesitan estar conectados a la vez, porque el <em>broker</em> tiene la capacidad de almacenar mensajes</b>, aunque en la mayoría de los casos los mensajes se consumen en tiempo real, generalmente sucede con clientes que no están sincrónicamente conectados. 
           br
           br
-          |En resumen, <b>el protocolo MQTT se basa en que alguien publica un mensaje con el identificador de un <em>topic </em>específico</b> , el <em>broker</em> distribuye el mensaje a todos los clientes (aplicaciones o dispositivos) que están suscritos a ese <em>topic</em> y esos clientes reciben y consumen los datos de esos mensajes.
+          |En resumen, <b>el protocolo MQTT se basa en que alguien publica un mensaje con el identificador de un <em>topic </em>específico</b>, el <em>broker</em> distribuye el mensaje a todos los clientes (aplicaciones o dispositivos) que están suscritos a ese <em>topic</em> y esos clientes reciben y consumen los datos de esos mensajes.
           br
           br
           |MQTT se usa actualmente en autos, casas y ciudades inteligentes, así como en fábricas, productos de consumo, etcétera.
@@ -296,9 +296,9 @@ export default {
         classText: 'bg__1',
       },
       {
-        titulo: 'Broker MQTT',
+        titulo: '<em>Broker</em> MQTT',
         texto:
-          'Es un elemento  primordial para realizar el envío de los datos entre los clientes, debe estar en constante funcionamiento y ser visible a red externa. <br><br>Entre muchos <em>brokers</em> públicos existen dos bastante usados y disponibles:<br><br> <b>Mosquito Broker:</b> servicio gratuito destinado a la realización de pruebas.<br><br> <b>Cloud MQTT:</b> servicio de pago y asegura disponibilidad del servicio.',
+          'Es un elemento  primordial para realizar el envío de los datos entre los clientes, debe estar en constante funcionamiento y ser visible a red externa. <br><br>Entre muchos <em>brokers</em> públicos existen dos bastante usados y disponibles:<br><br> <b>Mosquito <em>Broker</em>:</b> servicio gratuito destinado a la realización de pruebas.<br><br> <b><em>Cloud</em> MQTT:</b> servicio de pago y asegura disponibilidad del servicio.',
         img: require('@/assets/curso/card2.svg'),
         class: 'bg-card__2',
         classText: 'bg__2',
@@ -306,7 +306,7 @@ export default {
       {
         titulo: 'Nodo servidor',
         texto:
-          'Este nodo cuenta  con funciones de servidor <em>web</em> y base de datos y como cliente MQTT suscrito a los topics de interés y almacena información en la base de datos.',
+          'Este nodo cuenta  con funciones de servidor <em>web</em> y base de datos y como cliente MQTT suscrito a los <em>topics</em> de interés y almacena información en la base de datos.',
         img: require('@/assets/curso/card3.svg'),
         class: 'bg-card__3',
         classText: 'bg__3',

@@ -4,7 +4,7 @@
     .col-xl-3.mb-lg-0.mb-3(v-for="(card, index) in cards" :key="index+'card'")
       .card-container(@click='mostrarTexto(index)' )
         .card-container__card-top.px-5.py-4(:class='card.class')
-          h3.mb-0.text-center {{card.titulo}}
+          h3.mb-0.text-center(v-html='card.titulo')
         .card-container__card-text(:class="[card.classText, activeIndex == index+1  ? 'active':'']" )
           p(v-html="card.texto")
         .card-container__card-bottom.px-5.py-3(:class='card.class')
